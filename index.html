@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de Ingeniería Sur & Proyecta S.A.C.</title>
+    <!-- Fuentes premium de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Iconos modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Navegación Inteligente (Glassmorphism) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <span class="accent-text">GRUPO SUR</span> & PROYECTA
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#contacto" class="nav-link nav-btn">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero Principal -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Ingeniería y Consultoría de Alta Precisión</span>
+            <h1 class="hero-title">GRUPO DE INGENIERÍA SUR & PROYECTA S.A.C.</h1>
+            <p class="hero-subtitle">Diseñando, creando y construyendo el Sur...</p>
+            
+            <div class="tags-container">
+                <span class="tag"><i class="fas fa-layer-group"></i> Topografía</span>
+                <span class="tag"><i class="fas fa-ship"></i> Batimetría</span>
+                <span class="tag"><i class="fas fa-bolt"></i> LiDAR</span>
+                <span class="tag"><i class="fas fa-globe-americas"></i> Geodesia</span>
+                <span class="tag"><i class="fas fa-helicopter"></i> Drones</span>
+                <span class="tag"><i class="fas fa-file-invoice"></i> Expedientes Técnicos</span>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">Solicitar Cotización <i class="fas fa-chevron-right"></i></a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section section-light">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text">
+                    <span class="section-subtitle">Quiénes Somos</span>
+                    <h2 class="section-title">Empresa líder en soluciones de ingeniería del sur peruano</h2>
+                    <p class="section-desc">
+                        Nos especializamos en brindar soluciones integrales de alta precisión técnica, garantizando la viabilidad y la seguridad jurídica de cada proyecto. Nuestras principales líneas de servicio incluyen:
+                    </p>
+                    <p class="section-desc" style="margin-bottom: 12px;">
+                        <strong>🔹 Topografía y Geodesia de Alta Precisión:</strong> Levantamientos topográficos, control geométrico y posicionamiento geodésico utilizando tecnología GNSS de última generación.
+                    </p>
+                    <p class="section-desc" style="margin-bottom: 12px;">
+                        <strong>🔹 Fotogrametría con Drones:</strong> Vuelos aerofotogramétricos con tecnología drone para la generación de modelos digitales de terreno, ortomosaicos de alta resolución y catastros.
+                    </p>
+                    <p class="section-desc" style="margin-bottom: 12px;">
+                        <strong>🔹 Saneamiento Físico-Legal de Predios:</strong> Asesoría especializada en la regularización, rectificación de áreas, delimitación y diagnóstico técnico-legal de propiedades tanto urbanas como rurales.
+                    </p>
+                    <p class="section-desc" style="margin-bottom: 25px;">
+                        <strong>🔹 Consultoría y Gestión de Proyectos:</strong> Elaboración de expedientes técnicos, diseño de infraestructura, supervisión de obras y consultoría en Seguridad y Salud en el Trabajo.
+                    </p>
+                    <div class="features-mini">
+                        <div class="f-mini-item">
+                            <i class="fas fa-check-circle"></i> <span>Alta Precisión Milimétrica</span>
+                        </div>
+                        <div class="f-mini-item">
+                            <i class="fas fa-check-circle"></i> <span>Equipo Técnico Calificado</span>
+                        </div>
+                        <div class="f-mini-item">
+                            <i class="fas fa-check-circle"></i> <span>Cumplimiento Estricto de Plazos</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECCIÓN MODIFICADA: Imagen Corporativa jala desde tu carpeta local -->
+                <div class="section-image-box" id="caja-imagen-corporativa">
+                    <img src="fotos/corporativa.jpg" alt="Equipo en Campo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; display: block;" onerror="document.getElementById('caja-imagen-corporativa').style.display='none';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nuestra Experiencia</span>
+                <h2 class="section-title">Servicios Especializados</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Topografía Integral</h3>
+                    <p>Levantamientos topográficos detallados para catastro, carreteras, habilitaciones urbanas y obras civiles con estaciones totales de última generación.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-water"></i></div>
+                    <h3>Batimetría</h3>
+                    <p>Mapeo y estudio del relieve del fondo de cuerpos de agua (ríos, lagos, embalses) utilizando ecosondas de alta frecuencia.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-braille"></i></div>
+                    <h3>Tecnología LiDAR</h3>
+                    <p>Escaneo láser 3D aéreo y terrestre para la generación de nubes de puntos de alta densidad y modelos digitales de terreno con vegetación densa.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-satellite"></i></div>
+                    <h3>Geodesia Satelital</h3>
+                    <p>Establecimiento de puntos de control geodésico de orden cero, A, B y C enlazados a la red del IGN utilizando receptores GNSS diferenciales.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-drone"></i></div>
+                    <h3>Fotogrametría con Drones</h3>
+                    <p>Generación de ortomosaicos de alta resolución, modelos 3D e inspecciones visuales detalladas de infraestructuras complejas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-folder-open"></i></div>
+                    <h3>Expedientes Técnicos</h3>
+                    <p>Elaboración y consultoría integral de proyectos de ingeniería, estudios de impacto ambientals y metrados detallados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Casos de Éxito</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-placeholder"><i class="fas fa-mountain"></i></div>
+                    <div class="project-info">
+                        <span class="p-category">Topografía & Geodesia</span>
+                        <h3>Control Geodésico Minero</h3>
+                        <p>Establecimiento de una red geodésica de alta precisión para el desarrollo de operaciones mineras en el sur del país.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder"><i class="fas fa-road"></i></div>
+                    <div class="project-info">
+                        <span class="p-category">LiDAR & Drones</span>
+                        <h3>Levantamiento Vial de Alta Densidad</h3>
+                        <p>Escaneo de 150 km de carretera para trazo y optimización geométrica de vía interprovincial.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-placeholder"><i class="fas fa-water"></i></div>
+                    <div class="project-info">
+                        <span class="p-category">Batimetría</span>
+                        <h3>Estudio de Capacidad de Embalse</h3>
+                        <p>Cálculo volumétrico por batimetría para represa de almacenamiento de agua agrícola.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería (Modificada para Carga Local) -->
+    <section id="galeria" class="section section-gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Registro en Campo</span>
+                <h2 class="section-title">Nuestra Galería Visual</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Contenedor optimizado donde JS inyectará tus imágenes directamente -->
+            <div class="gallery-grid" id="contenedor-fotos">
+                <!-- Las fotos reales aparecerán aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section section-light">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info-side">
+                    <h2>¿Listo para iniciar tu proyecto?</h2>
+                    <p>Ponte en contacto con nuestros ingenieros especialistas para recibir asesoría personalizada y cotizaciones a medida.</p>
+                    
+                    <div class="info-links">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p>grupodeingenieriasur@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Teléfonos / WhatsApp</h4>
+                                <p>+51 961 793 504</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Oficina Principal</h4>
+                                <p>Arequipa / Puno, Perú</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTÓN DIRECTO A WHATSAPP -->
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me/51961793504?text=Hola,%20solicito%20información%20sobre%20sus%20servicios%20de%20ingeniería%20y%20consultoría." 
+                           target="_blank" 
+                           style="display: inline-flex; align-items: center; gap: 10px; background-color: #25D366; color: white; text-decoration: none; padding: 12px 24px; border-radius: 25px; font-weight: bold; font-family: 'Poppins', sans-serif; font-size: 14px; box-shadow: 0 4px 10px rgba(37,211,102,0.3); transition: transform 0.2s;">
+                            <i class="fab fa-whatsapp" style="font-size: 18px;"></i> Contactar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <form class="main-form" onsubmit="event.preventDefault(); alert('¡Simulación de envío con éxito!');">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo / Empresa</label>
+                            <input type="text" id="name" required placeholder="Ej. Juan Pérez / Constructora Sur">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Corporativo</label>
+                            <input type="email" id="email" required placeholder="nombre@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio Requerido</label>
+                            <select id="service">
+                                <option>Topografía Integral</option>
+                                <option>Batimetría</option>
+                                <option>Levantamiento LiDAR</option>
+                                <option>Fotogrametría con Drones</option>
+                                <option>Expedientes Técnicos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detalles del Proyecto</label>
+                            <textarea id="message" rows="4" placeholder="Describa el lugar, área aproximada y alcance del trabajo requerido..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Solicitud <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 GRUPO DE INGENIERÍA SUR & PROYECTA S.A.C. Todos los derechos reservados.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lógica de Interacciones en JS -->
+    <script>
+        // Cambio de color de barra de navegación al hacer scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Menú Móvil Hamburguesa
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if(navMenu.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+
+        // Cerrar menú móvil al hacer click en un enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+
+        // --- SISTEMA AUTOMÁTICO DE CARGA DE IMÁGENES LOCALES ---
+        const misFotos = [
+            'foto1.jpg',
+            'foto2.jpg',
+            'foto3.jpg',
+            'foto4.jpg',
+            'foto5.jpg',
+            'foto6.jpg'
+        ];
+
+        const contenedor = document.getElementById('contenedor-fotos');
+
+        if (misFotos.length === 0) {
+            contenedor.innerHTML = '<p style="text-align:center; color:#718096; grid-column: 1/-1;">Aún no se han definido imágenes en el código.</p>';
+        } else {
+            misFotos.forEach(nombreFoto => {
+                const tarjeta = document.createElement('div');
+                tarjeta.className = 'gallery-item';
+
+                const img = document.createElement('img');
+                img.src = `fotos/${nombreFoto}`;
+                img.alt = 'Registro de trabajo en campo - Grupo Sur & Proyecta';
+                img.loading = 'lazy';
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.objectFit = 'cover';
+
+                img.onerror = function() {
+                    tarjeta.style.display = 'none';
+                };
+
+                tarjeta.appendChild(img);
+                contenedor.appendChild(tarjeta);
+            });
+        }
+    </script>
+</body>
+</html>
