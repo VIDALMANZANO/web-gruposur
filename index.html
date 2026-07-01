@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo de Ingeniería Sur & Proyecta S.A.C.</title>
-    <!-- Fuentes premium de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Iconos modernos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <!-- Navegación Inteligente (Glassmorphism) -->
     <header class="navbar">
         <div class="nav-container">
             <a href="#inicio" class="logo">
@@ -34,7 +31,6 @@
         </div>
     </header>
 
-    <!-- Sección Hero Principal -->
     <section id="inicio" class="hero-section">
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
@@ -62,7 +58,6 @@
         </div>
     </section>
 
-    <!-- Sección Nosotros -->
     <section id="nosotros" class="section section-light">
         <div class="container">
             <div class="section-grid">
@@ -96,7 +91,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- SECCIÓN MODIFICADA: Imagen Corporativa jala desde tu carpeta local -->
                 <div class="section-image-box" id="caja-imagen-corporativa">
                     <img src="fotos/corporativa.jpg" alt="Equipo en Campo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; display: block;" onerror="document.getElementById('caja-imagen-corporativa').style.display='none';">
                 </div>
@@ -104,7 +98,6 @@
         </div>
     </section>
 
-    <!-- Sección Servicios -->
     <section id="servicios" class="section section-dark">
         <div class="container">
             <div class="section-header">
@@ -139,7 +132,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="card-icon"><i class="fas fa-drone"></i></div>
+                    <div class="card-icon"><i class="fas fa-helicopter"></i></div>
                     <h3>Fotogrametría con Drones</h3>
                     <p>Generación de ortomosaicos de alta resolución, modelos 3D e inspecciones visuales detalladas de infraestructuras complejas.</p>
                 </div>
@@ -150,17 +143,21 @@
                     <p>Elaboración y consultoría integral de proyectos de ingeniería, estudios de impacto ambientals y metrados detallados.</p>
                 </div>
 
-                <!-- NUEVO SERVICIO AGREGADO -->
                 <div class="service-card">
                     <div class="card-icon"><i class="fas fa-city"></i></div>
-                    <h3>Trabajos de Catastro</h3>
-                    <p>Realizamos catastro de predios, programación y catastro técnico de redes de agua y alcantarillado.</p>
+                    <h3>Catastro Predial y Municipal</h3>
+                    <p>Levantamiento, inventario y estructuración de bases de datos geoespaciales urbanas y rurales conforme a la Ley N° 28294, orientados a la gestión territorial y optimización tributaria.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-faucet-drip"></i></div>
+                    <h3>Catastro Técnico de Redes Sanitarias</h3>
+                    <p>Modelamiento, georreferenciación e inventario de infraestructura de sistemas de agua potable y alcantarillado, estructurado bajo los lineamientos metodológicos y directivas regulatorias de SUNASS.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos -->
     <section id="proyectos" class="section section-light">
         <div class="container">
             <div class="section-header">
@@ -200,7 +197,6 @@
         </div>
     </section>
 
-    <!-- Sección Galería (Modificada para Carga Local) -->
     <section id="galeria" class="section section-gallery">
         <div class="container">
             <div class="section-header">
@@ -209,14 +205,11 @@
                 <div class="header-line"></div>
             </div>
 
-            <!-- Contenedor optimizado donde JS inyectará tus imágenes directamente -->
             <div class="gallery-grid" id="contenedor-fotos">
-                <!-- Las fotos reales aparecerán aquí -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- Sección Contacto -->
     <section id="contacto" class="section section-light">
         <div class="container">
             <div class="contact-box">
@@ -249,7 +242,6 @@
                         </div>
                     </div>
 
-                    <!-- BOTÓN DIRECTO A WHATSAPP -->
                     <div style="margin-top: 30px;">
                         <a href="https://wa.me/51961793504?text=Hola,%20solicito%20información%20sobre%20sus%20servicios%20de%20ingeniería%20y%20consultoría." 
                            target="_blank" 
@@ -290,7 +282,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container footer-content">
             <p>&copy; 2026 GRUPO DE INGENIERÍA SUR & PROYECTA S.A.C. Todos los derechos reservados.</p>
@@ -302,7 +293,6 @@
         </div>
     </footer>
 
-    <!-- Lógica de Interacciones en JS -->
     <script>
         // Cambio de color de barra de navegación al hacer scroll
         window.addEventListener('scroll', function() {
