@@ -252,7 +252,7 @@
                 </div>
 
                 <div class="contact-form-side">
-                    <form class="main-form" onsubmit="event.preventDefault(); alert('¡Simulación de envío con éxito!');">
+                    <form class="main-form" onsubmit="enviarCorreo(event);">
                         <div class="form-group">
                             <label for="name">Nombre Completo / Empresa</label>
                             <input type="text" id="name" required placeholder="Ej. Juan Pérez / Constructora Sur">
@@ -269,6 +269,8 @@
                                 <option>Levantamiento LiDAR</option>
                                 <option>Fotogrametría con Drones</option>
                                 <option>Expedientes Técnicos</option>
+                                <option>Catastro Predial y Municipal</option>
+                                <option>Catastro Técnico de Redes Sanitarias</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -294,6 +296,32 @@
     </footer>
 
     <script>
+        // Función específica para enviar los datos de la cotización directamente por correo electrónico
+        function enviarCorreo(event) {
+            event.preventDefault();
+            
+            const nombre = document.getElementById('name').value;
+            const correoCliente = document.getElementById('email').value;
+            const servicio = document.getElementById('service').value;
+            const detalles = document.getElementById('message').value;
+            
+            const emailEmpresa = "grupodeingenieriasur@gmail.com";
+            const asunto = encodeURIComponent(`Solicitud de Cotización: ${servicio} - ${nombre}`);
+            
+            const cuerpoMensaje = encodeURIComponent(
+                `Hola Grupo de Ingeniería Sur & Proyecta,\n\n` +
+                `Se ha recibido una nueva solicitud de cotización desde el sitio web:\n\n` +
+                `🔹 Nombre / Empresa: ${nombre}\n` +
+                `🔹 Correo de contacto: ${correoCliente}\n` +
+                `🔹 Servicio requerido: ${servicio}\n\n` +
+                `🔹 Detalles del Proyecto:\n${detalles}\n\n` +
+                `Saludos.`
+            );
+            
+            // Abre el gestor de correos del cliente listo para enviar
+            window.location.href = `mailto:${emailEmpresa}?subject=${asunto}&body=${cuerpoMensaje}`;
+        }
+
         // Cambio de color de barra de navegación al hacer scroll
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
