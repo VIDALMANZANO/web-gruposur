@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Etiqueta de verificación de Google Search Console -->
+    <meta name="google-site-verification" content="luJ4Thf98ZM8Uv3d7-fbHrtMABt4ypYPg6_uaMwH_fQ" />
+    
+    <!-- Meta etiquetas para mejorar la búsqueda (SEO) -->
+    <meta name="description" content="Grupo de Ingeniería Sur & Proyecta S.A.C. - Empresa especializada en topografía integral, batimetría, tecnología LiDAR, geodesia satelital, fotogrametría con drones y expedientes técnicos.">
+    <meta name="keywords" content="Grupo de Ingeniería Sur & Proyecta, Topografía, Batimetría, LiDAR, Drones, Expedientes Técnicos, Juliaca, Puno">
+    
     <title>Grupo de Ingeniería Sur & Proyecta S.A.C.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,7 +126,7 @@
                 <div class="service-card">
                     <div class="card-icon"><i class="fas fa-water"></i></div>
                     <h3>Batimetría</h3>
-                    <p>Mapeo y estudio del relieve del fondo de cuerpos de agua (ríos, lagos, embalses) utilizando ecosondas de alta frecuencia.</p>
+                    <p>Mapeo y estudio del relief del fondo de cuerpos de agua (ríos, lagos, embalses) utilizando ecosondas de alta frecuencia.</p>
                 </div>
 
                 <div class="service-card">
@@ -143,7 +150,7 @@
                 <div class="service-card">
                     <div class="card-icon"><i class="fas fa-folder-open"></i></div>
                     <h3>Expedientes Técnicos</h3>
-                    <p>Elaboración y consultoría integral de proyectos de ingeniería, estudios de impacto ambientals y metrados detallados.</p>
+                    <p>Elaboración y consultoría integral de proyectos de ingeniería, estudios de impacto ambiental y metrados detallados.</p>
                 </div>
 
                 <div class="service-card">
@@ -209,7 +216,7 @@
             </div>
 
             <div class="gallery-grid" id="contenedor-fotos">
-                </div>
+            </div>
         </div>
     </section>
 
@@ -299,7 +306,6 @@
     </footer>
 
     <script>
-        // Función específica para enviar los datos de la cotización directamente por correo electrónico
         function enviarCorreo(event) {
             event.preventDefault();
             
@@ -321,11 +327,9 @@
                 `Saludos.`
             );
             
-            // Abre el gestor de correos del cliente listo para enviar
             window.location.href = `mailto:${emailEmpresa}?subject=${asunto}&body=${cuerpoMensaje}`;
         }
 
-        // Cambio de color de barra de navegación al hacer scroll
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
@@ -335,7 +339,6 @@
             }
         });
 
-        // Menú Móvil Hamburguesa
         const menuToggle = document.querySelector('.menu-toggle');
         const navMenu = document.querySelector('.nav-menu');
 
@@ -349,7 +352,6 @@
             }
         });
 
-        // Cerrar menú móvil al hacer click en un enlace
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -357,7 +359,6 @@
             });
         });
 
-        // --- SISTEMA AUTOMÁTICO DE CARGA DE IMÁGENES LOCALES (SOPORTE PARA 30 FOTOS) ---
         const misFotos = [
             'foto1.jpg', 'foto2.jpg', 'foto3.jpg', 'foto4.jpg', 'foto5.jpg',
             'foto6.jpg', 'foto7.jpg', 'foto8.jpg', 'foto9.jpg', 'foto10.jpg',
